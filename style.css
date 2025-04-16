@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+:root{
+    --Strong-Cyan: hsl(171, 66%, 44%);
+    --Light-Blue: hsl(233, 100%, 69%);
+    --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+    --Grayish-Blue: hsl(201, 11%, 66%);
+}
+
+
+header{
+    background-image: url(./images/bg-header-desktop.png);
+    background-size: cover;
+
+    
+}
+
+.btn-one,.btn-two{
+    padding: 6px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.btn-one{
+    background-color: var(--Strong-Cyan);
+    color: white;
+}
+.btn-two{
+    background-color: var(--Light-Blue);
+    color: white;
+}
+ 
+
+header .header_two{
+margin-top: 200px;
+}
+
+
+main  .section_two, .section_three
+{
+    margin-top: 200px;
+}
+
+
+
+main .section_three .clip,.logos,.boxes{
+    margin-top: 150px;
+}
+
+main .boxes .box{
+    padding: 10px;
+    box-shadow: 0 0 2px ;
+    border-radius: 20px;
+    
+}
+
+footer{
+    margin-top: 200px;
+    background-color: var(--Grayish-Blue);
+    padding: 30px;
+}
+
+footer .nav_one{
+    margin-top: 40px;
+}
+
+footer .nav_one li{
+    list-style: none;
+    margin: 10px;
+
+}
+footer .nav_one li a{
+    color: var(--Dark-Grayish-Blue);
+    text-decoration: none;
+
+}
+
+
+
+
+
+@media screen and (max-width: 416px) {
+    header {
+        background-image: url(./images/bg-header-mobile.png);
+    }
+    
+    header .btn-one,.btn-two
+    {
+        margin-top: 20px;
+    }
+   
+    main .logos{
+        justify-content: center;
+    }
+    main .boxes .box{
+        margin: 20px;
+    }
+}
